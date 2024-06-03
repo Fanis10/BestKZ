@@ -109,10 +109,10 @@
             <div class="header-bottom__inner">
                 <ul class="header-bottom__list">
                     <li><a href="">О компании</a></li>
-                    <li><a href="">Поиск тура</a></li>
-                    <li class="active"><a href="">Горящие туры</a></li>
+                    <li><a href="#section-group">Поиск тура</a></li>
+                    <li><a href="#services">Горящие туры</a></li>
                     <li><a href="">Страны и отели</a></li>
-                    <li><a href="">Визы</a></li>
+                    <li><a href="visas.html">Визы</a></li>
                     <li><a href="">Сертификаты</a></li>
                     <li><a href="">Казахстан</a></li>
                 </ul>
@@ -132,16 +132,18 @@
     </div>
 </header>
 		<main class="content-wrap">
-			<section class="section-group">
+			<section id="section-group" class="section-group">
 				<div class="container">
 					<div class="section-group__inner">
 						<div class="selection">
 							<h2>Подбор тура</h2>
 							<div class="tv-min-price tv-moduleid-9958805"></div>
+							<script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 						</div>
-						<div class="services">
+						<div class="services" id="services">
 							<h2>Горящие туры</h2>
 							<div class="tv-min-price tv-moduleid-178109"></div>
+							<script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 						</div>
 					</div>
 				</div>
@@ -195,7 +197,7 @@
 								Рассрочка
 								<span>0-0-12</span>
 							</div>
-							<button class="installment__btn btn-blue">
+							<button class="installment__btn btn-blue" data-fancybox data-src="#installment-modal">
 								<span>Подробнее</span>
 								<i>
 									<?xml version="1.0" encoding="utf-8"?>
@@ -221,7 +223,7 @@
 						<div class="news__slider">
 							<div class="swiper mySwiper">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide news-card">
+									<a href="" class="swiper-slide news-card">
 										<div class="news-card__img">
 											<img src="img/news-img.png" alt="">
 										</div>
@@ -233,8 +235,8 @@
 												<img src="img/news-logo.png" alt="">
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide news-card">
+									</a>
+									<a href="" class="swiper-slide news-card">
 										<div class="news-card__img">
 											<img src="img/news-img.png" alt="">
 										</div>
@@ -246,8 +248,8 @@
 												<img src="img/news-logo.png" alt="">
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide news-card">
+									</a>
+									<a href="" class="swiper-slide news-card">
 										<div class="news-card__img">
 											<img src="img/news-img.png" alt="">
 										</div>
@@ -259,8 +261,8 @@
 												<img src="img/news-logo.png" alt="">
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide news-card">
+									</a>
+									<a href="" class="swiper-slide news-card">
 										<div class="news-card__img">
 											<img src="img/news-img.png" alt="">
 										</div>
@@ -272,8 +274,8 @@
 												<img src="img/news-logo.png" alt="">
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide news-card">
+									</a>
+									<a href="" class="swiper-slide news-card">
 										<div class="news-card__img">
 											<img src="img/news-img.png" alt="">
 										</div>
@@ -285,7 +287,7 @@
 												<img src="img/news-logo.png" alt="">
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
@@ -485,9 +487,9 @@
             <div class="footer-top__inner">
                 <ul class="header-bottom__list">
                     <li><a href="">Поиск тура</a></li>
-                    <li class="active"><a href="">Горящие туры</a></li>
+                    <li><a href="">Горящие туры</a></li>
                     <li><a href="">Страны и отели</a></li>
-                    <li><a href="">Визы</a></li>
+                    <li><a href="visas.html">Визы</a></li>
                     <li><a href="">Сертификаты</a></li>
                     <li><a href="">Экскурсии по Казахстану</a></li>
                 </ul>
@@ -533,6 +535,24 @@
 </footer>
 
 	</div>
+
+	<div id="installment-modal" class="installment-modal">
+		<div class="installment-modal__bg"></div>
+		<div class="installment-modal__close">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}</style></defs><title>close</title><g id="Layer_2" data-name="Layer 2"><g id="close"><g id="close-2" data-name="close"><rect class="cls-1" width="24" height="24" transform="translate(24 24) rotate(180)"/><path class="cls-2" d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></g></g></g></svg>
+		</div>
+		<div class="installment-modal__inner">
+			<div class="installment-modal__img">
+				<img src="img/news-img.png" alt="">
+			</div>
+			<div class="installment-modal__text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi pariatur perspiciatis quis unde veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi pariatur perspiciatis quis unde veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi pariatur perspiciatis quis unde veritatis.</p>
+			</div>
+		</div>
+	</div>
+
 	<script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
